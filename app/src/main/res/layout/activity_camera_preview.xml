@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gvil.stereoscopic3d.activities.CameraPreviewScreen">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/preview_frame"
+        android:layout_weight="1">
+
+
+
+    </FrameLayout>
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_capture"
+        android:layout_alignBottom="@id/preview_frame"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:layout_width="@dimen/camera_preview_btn_nav_size"
+        android:layout_height="@dimen/camera_preview_btn_nav_size"
+        android:id="@+id/btn_delete_prev"
+        android:layout_alignBottom="@id/preview_frame"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_delete"
+        android:scaleType="centerCrop"
+       />
+
+    <ImageButton
+        android:layout_width="@dimen/camera_preview_btn_nav_size"
+        android:layout_height="@dimen/camera_preview_btn_nav_size"
+        android:id="@+id/btn_save_prev"
+        android:layout_alignBottom="@id/preview_frame"
+        android:layout_toLeftOf="@id/btn_delete_prev"
+        android:src="@drawable/ic_action_done"
+        android:scaleType="centerCrop"
+       />
+
+    <ImageButton
+        android:layout_width="@dimen/camera_preview_btn_nav_size"
+        android:layout_height="@dimen/camera_preview_btn_nav_size"
+        android:id="@+id/btn_gallery"
+        android:layout_alignBottom="@id/preview_frame"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_action_overflow"
+        android:scaleType="centerCrop"
+        />
+
+</RelativeLayout>
